@@ -1,10 +1,10 @@
-var mongoose = require('mongoose');
+var mongoose = require("mongoose");
 
 function dbConnect() {
   main().catch((err) => console.log(err));
   async function main() {
     await mongoose.connect("mongodb://localhost:27017/prieds");
-    console.log('database connectedd');
+    console.log("database connectedd");
   }
 }
 
